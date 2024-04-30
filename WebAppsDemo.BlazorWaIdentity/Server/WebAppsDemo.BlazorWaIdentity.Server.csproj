@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>WebAppsDemo.BlazorWaIdentity.Server-e69f4367-3cc7-4dd6-8612-f3eb1a74843c</UserSecretsId>
+    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\WebAppsDemo.BlazorWaIdentity.Client.csproj" />
+    <ProjectReference Include="..\Shared\WebAppsDemo.BlazorWaIdentity.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.17" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.17" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.16.0" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="2.16.0" />
+  </ItemGroup>
+
+</Project>
